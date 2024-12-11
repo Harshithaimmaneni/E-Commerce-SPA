@@ -1,0 +1,57 @@
+html, body {
+    height: 100%; /* Make sure the page takes full height */
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column; /* Enable flexbox for layout */
+  }
+  
+  .footerbox {
+    flex: 1; /* Allow main content to grow and take up remaining space */
+    padding-top: 50px;
+  }
+  
+  footer {
+    height: 37vh;
+    position: absolute;
+    width: 100%;
+    bottom: 0 !important;
+  }
+
+  h5{
+    color:  #d2b48c;
+  }
+  #carouselExample {
+    width: 70%; /* Adjust width */
+    height: 300px; /* Adjust height */
+    margin: auto; /* Optional: centers the carousel */
+  }
+  
+  #carouselExample .carousel-item img {
+    object-fit: cover; /* Ensures the image fits nicely */
+    height: 100%;
+  }
+  .custom-card {
+    max-width: 400px; /* Default width */
+  }
+  
+ 
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

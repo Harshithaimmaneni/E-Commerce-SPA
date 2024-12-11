@@ -3,9 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
     <title>E-commerce-spa</title>
 </head>
 <body>
-    <h1>Welcome to e-commerce web application </h1>
+   <!-- Top Bar -->
+   <div class="bg-light py-1 border-bottom">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+            <a href="#" class="text-muted me-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-muted me-3"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-muted me-3"><i class="bi bi-google"></i></a>
+        </div>
+    </div>
+</div>
+
+   <!--Nav Bar-->
+   <nav class="navbar navbar-expand-lg" style="background-color: #d2b48c;">
+    <div class="container-fluid">
+      <!-- Logo and Navbar Brand -->
+      <a class="navbar-brand" href="#">
+        <img src="./Images/MainPage/logo.jpg" alt="Logo" width="50" height="40" class="d-inline-block align-text-top">
+        <span class="navbar-brand mb-0 h1 ms-0">UrbanMart</span>
+      </a>
+      
+      <!-- Navbar Toggler Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Collapsible Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link disabled" aria-disabled="true">About</a>
+        </div>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-dark" type="submit">Search</button>
+          </form>
+      </div>
+      <!--icons at end of nav bar-->
+      <div class="d-flex ms-auto">
+        <!-- Icon 1: Bell with dropdown options -->
+        <div class="dropdown me-3">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownNotification" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-person" style="font-size: 30px;"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownNotification">
+            <li><a class="dropdown-item" href="#">Login</a></li>
+            <li><a class="dropdown-item" href="#">sign up</a></li>
+            <li><a class="dropdown-item" href="#">Log out</a></li>
+          </ul>
+        </div>
+         <div class="icon-item">
+            <i class="bi bi-cart3" style="font-size: 30px; color: #000;"></i>
+          </div>
+    </div>
+  </nav>
+
+  <!--Side bar-->
+  <div class="container-fluid">
+    <div class="row d-flex align-items-stretch">
+      <!-- Sidebar -->
+      <div class="col-lg-3">
+        <div class="d-flex flex-column flex-shrink-0 p-2 mt-1 text-bg-dark" style="width: 100%; height: 100%;">
+          <!-- Add Flexbox for the icon and text -->
+          <div class="d-flex align-items-center mb-3">
+            <i class="bi bi-list" style="font-size: 30px;"></i>
+            <h5 class="ms-2 mb-0">Shop By Categories</h5> 
+          </div>
+      
+          <ul class="nav nav-tabs flex-column mb-auto">
+            <li class="nav-item"><a href="#" class="nav-link active">Women</a></li>
+            <li><a href="#" class="nav-link text-white">Men</a></li>
+            <li><a href="#" class="nav-link text-white">Kids</a></li>
+            <li><a href="#" class="nav-link text-white">Furniture</a></li>
+            <li><a href="#" class="nav-link text-white">Electronics</a></li>
+            <li><a href="#" class="nav-link text-white">Skin care</a></li>
+          </ul>
+        </div>
+      </div>
+      
+  
+      <!-- Carousel -->
+      <div class="col-lg-9 mt-2">
+        <div id="carouselExample" class="carousel slide h-100" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./Images/7900709.jpg" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+              <img src="./Images/15082.jpg" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+              <img src="./Images/2264.jpg" class="d-block w-100" alt="Slide 3">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--MainPage Content-->
+  <div class="container my-5">
+    <div class="row text-center">
+      <!-- First Box -->
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="ps-block--icon">
+          <i class="bi bi-truck" style="font-size: 2rem; color:lightblue;"></i>
+          <h4 class="mt-2">Free Shipping</h4>
+          <p>ON ORDER OVER $199</p>
+        </div>
+      </div>
+  
+      <!-- Second Box -->
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="ps-block--icon">
+          <i class="bi bi-wallet2" style="font-size: 2rem; color:lightblue;"></i>
+          <h4 class="mt-2">100% MONEY BACK</h4>
+          <p>WITHIN 30 DAYS AFTER DELIVERY</p>
+        </div>
+      </div>
+  
+      <!-- Third Box -->
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="ps-block--icon">
+          <i class="bi bi-headset" style="font-size: 2rem; color: lightblue;"></i>
+          <h4 class="mt-2">SUPPORT 24/7</h4>
+          <p>WE CAN HELP YOU ONLINE</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!--Footer-->
+  <!-- <footer class="bd-footer py-1 bg-light mt-auto" style="height: 100px;"> -->
+    <div class="footerbox lg">
+      <div class="row g-4">
+        <!-- Left Section -->
+        <div class="col-lg-4 col-md-6">
+          <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="Bootstrap">
+            <img src="./Images/MainPage/logo.jpg" alt="Logo" width="50" height="40" class="d-inline-block align-text-top">
+            <span class="navbar-brand mb-0 h1 ms-2">UrbanMart</span>
+          </a>
+          <p class="mb-2"><strong>ONLINE SHOPPING MADE EASY AT UrbanMart</strong></p>
+          <p>Be it clothing, footwear or accessories, UrbanMart offers you the ideal combination of fashion and functionality for men, women, and kids.  Today Myntra sits on top of the online fashion game with an astounding social media following, a loyalty program dedicated to its customers, and tempting, hard-to-say-no-to deals.</p>
+          <p> Today Myntra sits on top of the online fashion game with an astounding social media following, a loyalty program dedicated to its customers, and tempting, hard-to-say-no-to deals.</p>
+        </div>
+  
+        <!-- Address Section -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-uppercase mb-3">Address</h5>
+          <p>
+            Buildings Alyssa, Begonia, and Clover situated in Embassy Tech Village,<br>
+            Outer Ring Road, Devarabeesanahalli Village,<br>
+            Bengaluru – 560103, India
+          </p>
+          <h6 class="mt-4">Phone & Number</h6>
+          <p>
+            Hotline: 804-377-3580<br>
+            Fax: 804-399-3580
+          </p>
+        </div>
+  
+        <!-- Open Times Section -->
+        <div class="col-lg-2 col-md-6">
+          <h5 class="text-uppercase mb-3">Open Times</h5>
+          <p>Monday: <span>8am - 4pm</span></p>
+          <p>Tuesday: <span>9am - 6pm</span></p>
+          <p>Wednesday: <span>9am - 6pm</span></p>
+          <p>Thursday: <span>9am - 6pm</span></p>
+          <p>Friday: <span>9am - 6pm</span></p>
+          <p>Saturday: <span>9am - 6pm</span></p>
+          <p>Sunday: <span class="text-danger"><strong>Closed</strong></span></p>
+        </div>
+  
+        <!-- Newsletter Section -->
+        <div class="col-lg-3 col-md-6 ">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-dark" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <!-- Copyright Section -->
+      <div class="text-center mt-4 border-top pt-3">
+        <p class="mb-0">© 2024 Company, Inc. All rights reserved.</p>
+      </div>
+    </div>
+  <!-- </footer> -->
+  
+  
+  
+  
+  
 </body>
 </html>
